@@ -1,0 +1,14 @@
+
+
+<module name="auditLogger" class="org.wso2.carbon.extensions.AuditLogModule">
+    <Description>
+        Module for audit logs
+    </Description>
+    <InFlow>
+        <handler name="AuditLogHandler"
+                 class="org.wso2.carbon.extensions.handler.AuditLogHandler">
+            <order phase="Transport"/>
+        </handler>
+    </InFlow>
+</module>
+
